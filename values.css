@@ -1,0 +1,196 @@
+@font-face {
+font-family: "RobotoSlab";
+src: url("fonts/RobotoSlab/RobotoSlab-Regular.ttf");
+font-weight: 400;
+}
+
+@font-face {
+font-family: "RobotoSlab";
+src: url("fonts/RobotoSlab/RobotoSlab-Bold.ttf");
+font-weight: 900;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    font-family: "RobotoSlab";
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    color: #000;
+}
+
+/*расположение картинки по центру экрана и определенным размером*/
+.container {
+    width: 60%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.timeline {
+    display: flex!important;
+    flex-direction: column!important;
+    position: relative;
+}
+
+/* линия по центру */
+.timeline:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 1px;
+    margin: 20px -1.5px;
+    background-color: #fff;
+    border: 1px dashed rgba(34, 142, 149, .9);
+}
+
+.timeline-item{
+    position: relative;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+/* треугольнички у блоков */
+.timeline-item:before {
+    content: " ";
+    position: absolute;
+    top: 10px;/*двигает треугольники по вертикали*/
+    right: -10px;/*двигает треугольники по горизонтали*/
+    border-width: 17.5px;/*уменьшает размер треугольников*/
+    border-color: transparent transparent transparent rgba(251, 235, 181, .76);/*transparent transparent transparent rgb*/
+    border-style: solid;
+}
+
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+}
+
+.timeline-item:nth-child(even):before {
+    content: " ";
+    position: absolute;
+    top: 10px;/*двигает треугольники по вертикали*/
+    right: auto;
+    left: -10px;/*двигает треугольники по горизонтали*/
+    border-width: 17.5px;
+    border-color: transparent rgba(251, 235, 181, .76) transparent transparent;
+    border-style: solid;
+}
+
+/*кружочки по линии*/
+/* .second-timeline-item:before {
+    content: " ";
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(126, 200, 189, .6);
+} */
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+.card-header {
+    padding: .5rem 1.25rem;
+    margin-bottom: 0;
+    color: #333333;
+    font-weight: 900;
+    background-color: rgba(251, 235, 181, .76);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: .25rem;
+}
+
+.card-text {
+    margin-bottom: 0;
+    color: #333333;
+}
+
+.border-0 {
+  border: 0!important;
+}
+
+@media (min-width:576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width:576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline:before {
+    left: 0;
+  }
+  .timeline-item {
+    width: 100%;
+  }
+  .timeline-item:before {
+    right: auto;
+    left: -10px;
+    border-color: transparent rgba(251, 235, 181, .76) transparent transparent;
+  }
+}
+
+@media (max-width: 460px) {
+    .container{
+        width: 90% !important;
+    }
+
+}
