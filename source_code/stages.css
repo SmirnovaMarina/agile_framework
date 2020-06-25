@@ -1,0 +1,113 @@
+@font-face {
+font-family: "RobotoSlab-Regular";
+src: url("fonts/RobotoSlab/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+font-family: "RobotoSlab";
+src: url("fonts/RobotoSlab/RobotoSlab-Bold.ttf");
+}
+
+h1 {
+    font-family: RobotoSlab-ExtraBold;
+    font-size: 25pt !important;
+}
+
+h5 {
+    font-family: RobotoSlab-Regular;
+    font-size: 14pt !important;
+}
+
+p{
+    font-size: 10pt;
+}
+
+.pre-project {
+    background-color: rgba(34, 142, 149, 0.9);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.project {
+    background-color: #78C0B6;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.post-project{
+    background-color: rgba(126, 200, 189, 0.6);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.col {
+    padding-top: 20px;
+}
+
+.stages {
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    background-color: #FFEA9E;
+    height: 40px;
+    max-width: 40px !important;
+    border-radius: 50px;
+
+    left: -35px;
+    float: left;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-stage{
+    position: relative;
+    right: 10%;
+}
+
+.right-stage-third{
+    text-align: right;
+    position: relative;
+    right: 83%;
+}
+
+.right-stage-second{
+    text-align: right;
+    position: relative;
+    left: 48%;
+}
+
+.left-paragraph{
+    position: relative;
+    right: 3%;
+    text-align: left;
+}
+
+.right-paragraph{
+    position: relative;
+    right: 112%;
+    text-align: right;
+    min-width: 11em;
+}
+
+#eight-stage-pic{
+    width: 101%;
+}
+
+.eight-stage{
+    padding: 0 !important;
+}
+
+#six-stage{
+    position: relative;
+    left: 61%;
+    text-align: right;
+}
+
+#ten-stage{
+    position: relative;
+    right: 88%;
+    text-align: right;
+}
