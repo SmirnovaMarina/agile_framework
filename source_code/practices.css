@@ -1,0 +1,116 @@
+@font-face {
+font-family: "RobotoSlab-Regular";
+src: url("fonts/RobotoSlab/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+font-family: "RobotoSlab-Bold";
+src: url("fonts/RobotoSlab/RobotoSlab-Bold.ttf");
+}
+
+body{
+    text-align: center;
+}
+
+.box{
+    display: inline-block;
+}
+
+#main-box{
+    width: 25%;
+    margin: 8% 0;
+    padding: .2em .2em;
+
+    background-color: #FFEA9E;
+
+    border: 1px solid #333333;
+    border-radius: 15px;
+
+    font-family: RobotoSlab-Regular;
+    font-size: 1.5em;
+}
+
+#left-dop-box, #right-dop-box{
+    width: 8%;
+}
+
+.types{
+    margin: 1em 5px;
+}
+
+#top{
+    margin-top: 0;
+}
+
+#bottom{
+    margin-bottom: 0;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.examples{
+    padding: .5em .5em;
+
+    background-color: rgba(126, 200, 189, 0.6);
+
+    border: 1px solid #333333;
+    border-radius: 15px;
+
+    font-family: RobotoSlab-Regular;
+    font-size: .8em;
+    text-align: left;
+}
+
+#right-box{
+    position: relative;
+    bottom: 2em;
+}
+
+#left-box{
+    position: relative;
+    top: .2em;
+}
+
+#design{
+    margin-bottom: 2.5em;
+}
+
+#communicate{
+    margin-bottom: 3.35em;
+}
+
+#develope{
+    margin-bottom: 3.7em;
+}
+
+#plan{
+    margin-bottom: 3.9em;
+}
+
+.dop-examples{
+    border-bottom: 1.5px solid #333;
+}
+
+#left-dop-box{
+    position: relative;
+    bottom: .5em;
+}
+
+#d1, #d2{
+    margin-bottom: 7.4em;
+}
+
+#right-dop-box{
+    position: relative;
+    bottom: 4em;
+}
+
+#d4, #d5{
+    margin-bottom: 7.5em;
+}
